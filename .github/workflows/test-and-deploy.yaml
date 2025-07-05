@@ -1,5 +1,5 @@
-name: Test and deploy
-  uses: actions/upload-artifact@v3
+name: Test and deploy test
+
 on:
   push:
     branches:
