@@ -4,7 +4,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
 	title: "Star-Element",
 	description: "自定义组件库",
-	base: "/starc-element/",
+	base: "/star-element/",
 	themeConfig: {
 		// https://vitepress.dev/reference/default-theme-config
 		nav: [
