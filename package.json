@@ -8,7 +8,7 @@
     "docs:dev": "pnpm --filter @star-element/docs dev",
     "docs:build": "pnpm --filter @star-element/docs build",
     "test": "pnpm --filter @star-element/components test",
-    "storybook": "pnpm --filter @star-element/play storybook"
+    "story": "pnpm --filter @star-element/play storybook"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +23,9 @@
     "postcss-color-mix": "^1.1.0",
     "postcss-each": "^1.1.0",
     "postcss-each-variables": "^0.3.0",
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
     "postcss-for": "^2.1.1",
     "postcss-nested": "^6.0.1",
     "typescript": "^5.2.2",

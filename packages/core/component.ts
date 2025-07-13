@@ -1,4 +1,4 @@
-import { ScButton } from "@star-element/components";
+import { ScButton, ScIcon } from "@star-element/components";
 import type { Plugin } from "vue";
 
-export default [ScButton] as Plugin[];
+export default [ScButton, ScIcon] as Plugin[];
