@@ -45,12 +45,19 @@
 	& + & {
 		margin-left: 12px;
 	}
-	&:hover,
-	&:focus {
+	&:hover {
 		color: var(--sc-button-hover-text-color);
 		border-color: var(--sc-button-hover-border-color);
 		background-color: var(--sc-button-hover-bg-color);
 		outline: none;
+	}
+	&:focus:not(:focus-visible) {
+		outline: none;
+	}
+	&:focus-visible {
+		outline: 2px solid var(--sc-button-outline-color);
+		outline-offset: 1px;
+		transition: outline-offset 0s, outline 0s;
 	}
 	&:active {
 		color: var(--sc-button-active-text-color);
