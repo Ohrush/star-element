@@ -12,7 +12,6 @@ const props = withDefaults(defineProps<ButtonProps>(), {
 	tag: "button",
 	nativeType: "button",
 	throttleDuration: 500,
-	useThrottle: true,
 });
 const emits = defineEmits<ButtonEmits>();
 
@@ -24,7 +23,11 @@ const _ref = ref<HTMLButtonElement>();
 const slots = defineSlots();
 
 const handleBtnClick = (e: MouseEvent) => emits("click", e);
-const handleBtnClickThrottle = throttle(handleBtnClick, props.throttleDuration);
+const handleBtnClickThrottle = throttle(
+	handleBtnClick,
+	props.throttleDuration,
+	{ trailing: false }
+);
 
 defineExpose<ButtonInstance>({
 	ref: _ref,
